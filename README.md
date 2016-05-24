@@ -1,2 +1,0 @@
-# xkay-rails
-Personal Website
