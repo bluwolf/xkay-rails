@@ -10,13 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require materialize.min
 //= require bootstrap.min
-//= require jquery.easing.min
-//= require jquery.fittext
-//= require wow.min
-//= require creative
-//= require_self
+//= require turbolinks

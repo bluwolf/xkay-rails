@@ -2,12 +2,9 @@
 <html lang="en">
 
   <head>
-
-
-
       <!-- Custom Fonts -->
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' property='stylesheet' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' property='stylesheet' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto">
 
       <link rel="stylesheet" property='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -24,243 +21,30 @@
 
   </head>
 
-  <body id="page-top">
+  <body>
 
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand page-scroll" href="#page-top">Xiaohan's Portfolio</a>
-              </div>
+        <%= render 'top' %>
 
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li>
-                          <a class="page-scroll" href="#about">About</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#mindset">Mindset</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#portfolio">Portfolio</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#contact">Contact</a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- /.navbar-collapse -->
+          <div class="parallax-container">
+            <div class="parallax"><%= image_tag "pexels-photo-115045.jpeg" %></div>
           </div>
-          <!-- /.container-fluid -->
-      </nav>
 
-      <header style=" background-image: url(<%= asset_path 'header.jpg' %>)">
-          <div class="header-content">
-              <div class="header-content-inner">
-                  <h1 style="text-shadow: 2px 1px black;">Xiaohan's Personal Space</h1>
-                  <hr>
-                  <p>A little about me from your perspective</p>
-                  <a href="#about" class="btn btn-primary btn-xl page-scroll">More About Me</a>
-              </div>
+        <%= render 'projects' %>
+
+          <div class="parallax-container">
+            <div class="parallax"><%= image_tag "pexels-photo-115045.jpeg" %></div>
           </div>
-      </header>
 
-      <section class="bg-primary" id="about">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <h2 class="section-heading">Always Learning</h2>
-                      <hr class="light">
-                      <p class="text-faded">I'm a software engineer with a focus in  web developement and app development.</p>
-                      <p class="text-faded">I currently reside in Los Angeles, California.</p>
+        <%= render 'resume' %>
 
 
-                      <!-- <p class="text-faded"> Learned the basics of software engineering at during </p> -->
-                      <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
-                  </div>
-              </div>
+          <div class="parallax-container">
+            <div class="parallax"><%= image_tag "pexels-photo-115045.jpeg" %></div>
           </div>
-      </section>
 
-      <section id="mindset">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2 class="section-heading">My Mindset</h2>
-                      <hr class="primary">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="service-box">
-                          <i class="fa fa-4x fa-glass wow bounceIn text-primary"></i>
-                          <h3>Achieve</h3>
-                          <p class="text-muted">If I make something, I want to make it beautiful.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="service-box">
-                          <i class="fa fa-4x fa-coffee wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                          <h3>Endurance</h3>
-                          <p class="text-muted">I believe all coding problems can be solved with music and a little trust to the self.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="service-box">
-                          <i class="fa fa-4x fa-bolt wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                          <h3>Ambitious</h3>
-                          <p class="text-muted">I'm always looking for a quicker way to kill the bug.</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 text-center">
-                      <div class="service-box">
-                          <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                          <h3>Learn</h3>
-                          <p class="text-muted">I'm going to the work force with an eager heart.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section class="no-padding" id="portfolio">
-          <div class="container-fluid">
-              <div class="row no-gutter">
-                  <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box">
-                        <%= image_tag("1.jpg", :alt => "", :class=>"img-responsive") %>
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      Hollywood
-                                  </div>
-                                  <div class="project-name">
-                                      "Friends" with Friends
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box">
-                            <%= image_tag("2.jpg", :alt => "", :class=>"img-responsive") %>
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      USC
-                                  </div>
-                                  <div class="project-name">
-                                      My School
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box">
-                          <%= image_tag("3.jpg", :alt => "", :class=>"img-responsive") %>
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      Big Plate Chicken
-                                  </div>
-                                  <div class="project-name">
-                                      Mom's Superb Cooking
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box">
-                          <%= image_tag("4.jpg", :alt => "", :class=>"img-responsive") %>
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      Yosemite
-                                  </div>
-                                  <div class="project-name">
-                                      Smirking at the Camera
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box">
-                            <%= image_tag("5.jpg", :alt => "", :class=>"img-responsive") %>
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      Beaudry Loop
-                                  </div>
-                                  <div class="project-name">
-                                      Picnic and Tree Climb
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box">
-                          <%= image_tag("6.jpg", :alt => "", :class=>"img-responsive") %>
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      Houston: My Home Town
-                                  </div>
-                                  <div class="project-name">
-                                      Fishing in the Mist
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <aside class="bg-dark">
-          <div class="container text-center">
-              <div class="call-to-action">
-                  <h2>My Links</h2>
-                  <a  target="_blank" href="https://github.com/bluwolf" class="btn btn-default btn-xl fa fa-github fa-lg wow tada">My Github</a>
-                    <a  target="_blank" href="https://www.linkedin.com/in/xiaohan-chen-ba189770" class="btn btn-default btn-xl fa fa-linkedin-square fa-lg wow tada">My LinkedIn</a>
-
-
-              </div>
-          </div>
-      </aside>
-
-      <section id="contact">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <h2 class="section-heading">Contact Me</h2>
-                      <hr class="primary">
-                      <p>Interested in my work or just want to see my resume? Just give me a call or email.</p>
-                  </div>
-                  <div class="col-lg-4 col-lg-offset-2 text-center">
-                      <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                      <p>504-261-8599</p>
-                  </div>
-                  <div class="col-lg-4 text-center">
-                      <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                      <p><a href="mailto:xiaohanc@usc.edu">xiaohanc@usc.edu</a></p>
-                  </div>
-              </div>
-          </div>
-      </section>
+        <%= render 'facts' %>
 
   </body>
+
 
 </html>
