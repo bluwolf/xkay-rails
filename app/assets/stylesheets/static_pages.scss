@@ -13,6 +13,19 @@ a:hover{
   }
 }
 
+.side-nav{
+ & :hover{
+   background-color: white !important;
+   color: black !important;
+
+ }
+}
+
+.name, .email{
+  font-size: 15px;
+}
+
+
 
 .title-font{
   font-size: 26px;
