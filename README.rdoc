@@ -6,6 +6,6 @@ My name is Kay and I am just one out of many who like to dream big. :-)
 I build my personal website on top of Ruby on Rails, and I use Heroku as my deployment tool.
 
 Here is the link:
-> http://xkay.herokuapp.com/
+>http://xkay.herokuapp.com/
 
 Thank you for navigating here. :-)
