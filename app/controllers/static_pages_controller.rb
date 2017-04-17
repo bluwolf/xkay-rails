@@ -3,6 +3,5 @@ class StaticPagesController < ApplicationController
   end
 
   def google20cfd316fa00539d
-
   end
 end
